@@ -1,42 +1,71 @@
-# Nuxt 3 Minimal Starter
+# Backend Engineer Portfolio
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A modern, responsive portfolio website built with Nuxt 3 and Tailwind CSS, featuring a beautiful dark/light theme.
+
+## Features
+
+- 🌓 Light and Dark theme with smooth transitions
+- 📱 Fully responsive design
+- 🎨 Modern UI with Tailwind CSS
+- ⚡ Fast page loads with Nuxt 3
+- 🧩 Component-based architecture
+
+## Project Structure
+
+```
+profile-me/
+├── components/           # Reusable Vue components
+│   ├── ProfileImage.vue
+│   ├── ThemeToggle.vue
+│   └── sections/        # Major page sections
+│       ├── HeroSection.vue
+│       ├── SkillsSection.vue
+│       ├── ProjectsSection.vue
+│       └── ContactSection.vue
+├── layouts/             # Nuxt layouts
+│   └── default.vue      # Default layout with navigation
+├── pages/              # File-based routing
+│   ├── index.vue       # Home page
+│   ├── skills.vue
+│   ├── projects.vue
+│   └── contact.vue
+├── public/             # Static assets
+├── app.vue             # Main app component
+└── tailwind.config.js  # Tailwind configuration
+```
 
 ## Setup
 
-Make sure to install the dependencies:
-
+1. Install dependencies:
 ```bash
-# yarn
-yarn install
-
-# npm
 npm install
-
-# pnpm
-pnpm install
 ```
 
-## Development Server
-
-Start the development server on http://localhost:3000
-
+2. Start development server:
 ```bash
 npm run dev
 ```
 
-## Production
-
-Build the application for production:
-
+3. Build for production:
 ```bash
 npm run build
 ```
 
-Locally preview production build:
+## Tech Stack
 
-```bash
-npm run preview
-```
+- [Nuxt 3](https://nuxt.com/) - Vue.js Framework
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [Vue 3](https://vuejs.org/) - Progressive JavaScript Framework
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Development
+
+The project follows Nuxt 3's conventions for routing and component organization:
+
+- Pages are automatically routed based on their file names in the `pages/` directory
+- Components in the `components/` directory are auto-imported
+- The default layout in `layouts/default.vue` provides the navigation and footer structure
+- Theme switching is handled by the `ThemeToggle` component using Tailwind's dark mode
+
+## License
+
+MIT
